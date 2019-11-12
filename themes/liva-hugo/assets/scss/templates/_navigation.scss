@@ -1,9 +1,15 @@
 .nav-item{
   margin: 0;
+  font-family: $headlines-font;
 
   .nav-link{
     text-transform: capitalize;
   }
+}
+
+.nav-link,
+.navbar {
+  padding: 1.2rem 1rem;
 }
 
 .navbar-white .navbar-nav .nav-link {
@@ -14,7 +20,7 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 20px;
+  /*padding: 20px;*/
 }
 
 .mobile-view{

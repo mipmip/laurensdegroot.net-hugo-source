@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "/"
 languageCode = "en-us"
-title = "Liva | Personal blog template"
+title = "Laurens de Groot"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
@@ -39,37 +39,39 @@ disqusShortname = ""
   [[params.plugins.js]]
   URL = "plugins/search/search.js"
 
-  
+
 ############################## navigation ###############################
 [menu]
-  
+
   # main menu
   [[menu.main]]
-  name = "About"
-  URL = "about/about"
-  weight = 2
-  
-  [[menu.main]]
-  name = "Post"
+  name = "Blog."
   URL = "blog"
-  weight = 3
-  
+  weight = 2
+
   [[menu.main]]
-  name = "Contact"
+  name = "Pers."
+  URL = "about/about"
+  weight = 3
+
+  [[menu.main]]
+  name = "Contact."
   URL = "contact"
   weight = 4
+
+
 
   # footer menu
   [[menu.footer]]
   name = "About"
   URL = "about/about"
   weight = 2
-  
+
   [[menu.footer]]
   name = "Post"
   URL = "blog"
   weight = 3
-  
+
   [[menu.footer]]
   name = "Contact"
   URL = "contact"
@@ -78,7 +80,7 @@ disqusShortname = ""
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/logo.svg"
 home = "Home"
 # Meta data
 description = "This is meta description"
@@ -90,20 +92,20 @@ mobile = "0124857985320"
 email = "demo@email.com"
 location = "Dhaka, Bangladedsh"
 # copyright
-copyright = "| @2019 [Themefisher](https://themefisher.com) All Rights Reserved |"
+copyright = "@2019 Laurens de Groot - Alle rechten voorbehouden"
 
   # Preloader
   [params.preloader]
-  enable = true
+  enable = false
   preloader = "" # use .png , .svg or .gif format
 
   # search
   [params.search]
-  enable = true
+  enable = false
 
 ############################ news letter ########################
 [params.newsletter]
-enable = true
+enable = false
 title = "Join Our Newsletter"
 content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
 
@@ -111,24 +113,24 @@ content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non
 [[params.social]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.facebook.com/laurens.degroot.79"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/degrootlaurens"
 
 [[params.social]]
 title = "instagram"
 icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.instagram.com/laurens.degroot/"
 
 [[params.social]]
-title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "youtube"
+icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
+link = "https://www.youtube.com/user/manmetkoffer"
 
 [[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.linkedin.com/in/laurens-de-groot-55771112/?locale=nl_NL"

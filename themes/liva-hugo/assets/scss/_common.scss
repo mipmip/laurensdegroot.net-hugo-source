@@ -1,10 +1,17 @@
 body {
-  background-color: grey;
+  background-color: #FCF9F2;
+  background-image: url(/images/achtergrond.png);
   overflow-x: hidden;
 }
 
 .container{
+    max-width:940px;
+    margin:0 auto;/*make it centered*/
+}
+
+.container-back-1{
   background-color: $body-color;
+  opacity:0.7;
 }
 
 ::selection {

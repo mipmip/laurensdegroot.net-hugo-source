@@ -1,5 +1,5 @@
 ---
-title: "Get In Touch"
+title: "Contact"
 date: 2019-10-29T13:49:23+06:00
 draft: false
 
@@ -10,4 +10,12 @@ description: "this is meta description"
 type : "contact"
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+Laurens de Groot wordt vertegenwoordigd door Man met Koffer.
+
+Meer informatie en boekingen:
+
+Laurens de Groot is represented by Man met Koffer.
+
+More information, bookings and contact through:
+
+#### Man met Koffer

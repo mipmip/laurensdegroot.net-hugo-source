@@ -7,6 +7,45 @@ summaryLength = "10"
 paginate = 6
 disqusShortname = ""
 
+######################## voorpagina ####################
+
+voorpagina_layout_schema = [
+  [
+    "3-poster-foto",
+  ],
+  [
+    "1-fotokaart-blog",
+    "1-fotokaart-blog",
+    "1-lijst-agenda"
+  ],
+  [
+    "2-poster-blog",
+    "1-fotokaart-blog"
+  ],
+  [
+    "1-lijst-column",
+    "1-kaart-blog",
+    "1-fotokaart-blog",
+  ],
+  [
+    "3-fotokaart-blog"
+  ],
+  [
+    "1-fotokaart-blog",
+    "1-kasjmier-blog",
+    "1-fotokaart-blog"
+  ],
+  [
+    "1-dubbelspaanswitkaart-blog",
+    "2-poster-foto"
+  ],
+  [
+    "1-fotokaart-blog",
+    "1-fotokaart-blog",
+    "1-mortalkaart-blog"
+  ]
+]
+
 [outputs]
   home = ["HTML", "AMP", "RSS", "JSON"]
 
@@ -43,39 +82,21 @@ disqusShortname = ""
 ############################## navigation ###############################
 [menu]
 
-  # main menu
-  [[menu.main]]
-  name = "Blog."
-  URL = "blog"
-  weight = 2
+# main menu
+[[menu.main]]
+name = "Blog."
+URL = "blog"
+weight = 2
 
-  [[menu.main]]
-  name = "Pers."
-  URL = "about/about"
-  weight = 3
+[[menu.main]]
+name = "Pers."
+URL = "pers/pers"
+weight = 3
 
-  [[menu.main]]
-  name = "Contact."
-  URL = "contact"
-  weight = 4
-
-
-
-  # footer menu
-  [[menu.footer]]
-  name = "About"
-  URL = "about/about"
-  weight = 2
-
-  [[menu.footer]]
-  name = "Post"
-  URL = "blog"
-  weight = 3
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 4
+[[menu.main]]
+name = "Contact."
+URL = "contact"
+weight = 4
 
 
 #################### default parameters ################################
@@ -84,24 +105,24 @@ logo = "images/logo.svg"
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Laurens de Groot"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+mobile = "+31 6 31 76 99 37"
+email = "info@manmetkoffer.nl"
+location = "Zoetermeer"
 # copyright
 copyright = "@2019 Laurens de Groot - Alle rechten voorbehouden"
 
-  # Preloader
-  [params.preloader]
-  enable = false
-  preloader = "" # use .png , .svg or .gif format
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use .png , .svg or .gif format
 
-  # search
-  [params.search]
-  enable = false
+# search
+[params.search]
+enable = false
 
 ############################ news letter ########################
 [params.newsletter]

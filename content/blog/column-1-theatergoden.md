@@ -17,7 +17,7 @@ tags:
   - "columm"
 
 # post type
-type: "featured"
+type: "post"
 ---
 
 In het theater zijn er vele gebruiken en rituelen, maar vooral erg veel

@@ -1,26 +1,22 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
+title: "Stijlvoorbeelden"
 date: 2019-10-29T10:07:47+06:00
 draft: false
 
 # post thumb
-image: "images/post/post-6.jpg"
+image: "images/featured-post/post-1.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
-categories: 
-  - "Python"
+categories:
+  - "blog"
 tags:
-  - "Photos"
-  - "Game"
-  - "HTML"
-  - "Python"
-  - "New"
+  - "voorbeeld"
 
 # post type
-type: "post"
+type: "blog"
 ---
 
 # Heading 1

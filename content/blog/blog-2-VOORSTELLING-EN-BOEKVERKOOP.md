@@ -4,7 +4,7 @@ date: 13-11-19
 draft: false
 
 # post thumb
-image: "images/featured-post/post-1.jpg"
+image: "images/ldg-7.png"
 
 # meta description
 description: "this is meta description"
@@ -16,7 +16,8 @@ tags:
   - "kerst"
 
 # post type
-type: "featured"
+type: "blog"
+weight: 200
 ---
 
 "Het kerstfeest van meneer Zondergeyn" is terug! Op 14 december speelt

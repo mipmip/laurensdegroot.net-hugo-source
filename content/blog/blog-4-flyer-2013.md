@@ -2,9 +2,10 @@
 title: "Het Kerstfeest van meneer Zondergeyn"
 date: 10-11-19
 draft: false
+weight: 400
 
 # post thumb
-image: "images/featured-post/post-1.jpg"
+image: "images/ldg-4.png"
 
 # meta description
 description: "this is meta description"
@@ -16,7 +17,7 @@ tags:
   - "thriller"
 
 # post type
-type: "featured"
+type: "blog"
 ---
 
 ***Het Kerstfeest van meneer Zondergeyn* is een productie van Man met

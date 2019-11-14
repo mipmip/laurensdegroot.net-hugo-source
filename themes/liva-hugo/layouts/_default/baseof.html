@@ -4,6 +4,25 @@
   <body>
       {{- partial "preloader.html" . -}}
       {{- partial "header.html" . -}}
+
+      {{ if .Site.Params.debug }}
+      <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Show debug
+      </a>
+      </p>
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+
+          {{ partial "debugprint.html" .Site }}
+          {{ partial "debugprint.html" . }}
+          {{ partial "debugprint.html" .Params }}
+        </div>
+      </div>
+
+    {{ end }}
+
       {{- block "main" . }}{{- end }}
       {{- partial "footer.html" . -}}
   </body>

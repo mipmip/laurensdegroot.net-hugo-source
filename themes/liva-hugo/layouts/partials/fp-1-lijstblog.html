@@ -1,0 +1,19 @@
+<div class="col-md-4 mb-3">
+
+  <h4>Blog.</h4>
+
+  {{ range first 5 (sort (where .RegularPages "Params.type" "blog") "File.Path" "desc") }}
+      <p class="pt">
+
+        <a href="{{ .Permalink }}">
+          <h6> {{.Title}} </h6>
+        </a>
+
+        {{ .Date.Format "2 January 2006" }}
+
+      </p>
+  {{ end }}
+
+  <button type="button" class="btn btn-primary">Meer</button>
+
+</div>

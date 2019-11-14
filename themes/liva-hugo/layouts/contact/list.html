@@ -17,7 +17,7 @@
           <div class="col-lg-4 small-post-border">
             <i class="ti-email h1 text-primary"></i>
             <h5 class="font-weight-light my-3">Email</h5>
-            {{ .Site.Params.email }}
+            <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
           </div>
           <div class="col-lg-4 small-post-border">
             <i class="ti-location-pin h1 text-primary"></i>
@@ -30,12 +30,13 @@
   </div>
 </section>
 
+<!--
 
 <section class="section-sm pb-0">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h2 class="mb-4">Hi Write To Me</h2>
+        <h2 class="mb-4">Stuur een bericht</h2>
         <form action="#" method="POST" class="row">
           <div class="col-lg-6">
             <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Your Name">
@@ -50,12 +51,13 @@
             <textarea name="message" id="message" class="form-control mb-4" placeholder="Your Message"></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">send message</button>
+            <button type="submit" class="btn btn-primary">Verstuur</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
+-->
 
 {{ end }}

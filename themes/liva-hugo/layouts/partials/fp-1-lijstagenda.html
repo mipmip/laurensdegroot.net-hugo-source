@@ -1,0 +1,17 @@
+<div class="col-md-4 mb-3">
+
+  <h4>Agenda.</h4>
+
+  {{ range first 4 .Data.agenda}}
+    {{ range $key, $value := . }}
+      <p class="pt">
+      <h6>{{ index $value 0 }}</h6>
+      <strong>{{ $key }}</strong></br>
+      {{ index $value 1 }}<br/>
+      </p>
+    {{ end }}
+  {{ end }}
+
+  <button type="button" class="btn btn-primary">Meer</button>
+
+</div>

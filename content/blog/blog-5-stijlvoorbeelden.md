@@ -1,7 +1,7 @@
 ---
 title: "Stijlvoorbeelden"
 date: 2019-10-29T10:07:47+06:00
-draft: false
+draft: true
 
 weight: 500
 

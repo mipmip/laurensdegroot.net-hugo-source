@@ -1,11 +1,12 @@
 /* Button style */
 .btn {
-  font-size: 14px;
-  font-family: $primary-font;
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: $headlines-font;
   text-transform: capitalize;
-  padding: 10px 15px;
+  padding: 5px 6px 0 6px;
   border-radius: 0;
-  border: 1px solid;
+  border: 0px solid;
   position: relative;
   z-index: 1;
   transition: .2s ease;
@@ -19,8 +20,8 @@
 }
 
 .btn-primary {
-  background: $primary-color;
-  color: $white;
+  background: $dubbelspaanswit;
+  color: $black;
   border-color: $primary-color;
 
   &:active,

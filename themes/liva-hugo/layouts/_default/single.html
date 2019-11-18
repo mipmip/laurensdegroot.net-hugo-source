@@ -7,7 +7,6 @@
 
       <div class="col-lg-12 mx-auto container-back-1 px-5">
 
-
         <div class="mt-4 mb-4 elite">
           {{ range .Params.Categories }}
           <a href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}"
@@ -17,9 +16,9 @@
 
         <h1 class="mt-5 mb-5">{{ .Title | markdownify }}</h1>
 
-        <div class="mb-3 elite">
+        <!--<div class="mb-3 elite">
           <span>{{ .PublishDate.Format "02 January 2006" }}</span>
-        </div>
+        </div>-->
 
         <div class="content mb-5 initiaal">
           {{ .Content }}

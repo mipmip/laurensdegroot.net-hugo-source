@@ -1,6 +1,6 @@
 <div class="col-md-4 mb-3">
 
-  <h4>Blog.</h4>
+  <h3 class="diapos"><span>Blog.</span></h3>
 
   {{ range first 5 (sort (where .RegularPages "Params.type" "blog") "File.Path" "desc") }}
       <p class="pt">
@@ -14,6 +14,6 @@
       </p>
   {{ end }}
 
-  <button type="button" class="btn btn-primary">Meer</button>
+  <button type="button" class="btn btn-primary float-right">Meer.</button>
 
 </div>

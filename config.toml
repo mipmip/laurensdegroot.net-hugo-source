@@ -73,20 +73,11 @@ weight = 4
   [
     "1-fotokaart-blog",
     "1-fotokaart-blog",
-    "1-lijst-agenda"
+    "1-lijst-agenda",
   ],
   [
-    "1-tekstkaart-blog",
-    "2-poster-foto"
-  ],
-  [
-    "2-poster-blog",
-    "1-fotokaart-blog"
-  ],
-  [
+    "2-poster-foto",
     "1-lijst-blog",
-    "1-fotokaart-blog",
-    "1-fotokaart-blog",
   ],
   [
     "1-fotokaart-blog",
@@ -104,7 +95,7 @@ weight = 4
 ]
 debug = false
 logo = "images/logo.svg"
-home = "Home"
+home = "Home."
 # Meta data
 description = "This is meta description"
 author = "Laurens de Groot"

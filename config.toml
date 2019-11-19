@@ -76,8 +76,8 @@ weight = 4
     "1-lijst-agenda",
   ],
   [
-    "2-poster-foto",
     "1-lijst-blog",
+    "2-poster-foto",
   ],
   [
     "1-fotokaart-blog",
@@ -100,7 +100,7 @@ home = "Home."
 description = "This is meta description"
 author = "Laurens de Groot"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-152869743-1"
 # Contact Information
 mobile = "+31 6 31 76 99 37"
 email = "info@manmetkoffer.nl"

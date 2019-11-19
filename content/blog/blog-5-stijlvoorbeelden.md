@@ -14,6 +14,7 @@ description: "this is meta description"
 # taxonomies
 categories:
   - "blog"
+  - "theater"
 tags:
   - "voorbeeld"
 
@@ -156,7 +157,7 @@ Markdown | Less | Pretty
 
 ##### Image
 
-![image](../../images/post/post-1.jpg)
+![image](../../images/ldg-1.png)
 
 <hr>
 

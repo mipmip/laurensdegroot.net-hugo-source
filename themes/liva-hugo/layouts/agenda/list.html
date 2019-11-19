@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-1 col-md-4 mb-3">
+        <h3 class="diapos"><span>Agenda.</span></h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      {{ range $.Site.Data.agenda}}
+      {{ range $key, $value := . }}
+      <div class="offset-md-1 col-md-4 mb-3 card">
+
+        <p class="pt">
+        <h6>{{ index $value 0 }}</h6>
+        <strong>{{ $key }}</strong></br>
+        {{ index $value 1 }}<br/>
+        </p>
+      </div>
+      {{ end }}
+      {{ end }}
+
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

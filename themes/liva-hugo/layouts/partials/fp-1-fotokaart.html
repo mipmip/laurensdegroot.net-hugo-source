@@ -1,9 +1,10 @@
 <div class="col-md-4 mb-3">
-  <article class="card">
-    <img src="{{.Params.image}}" class="card-img-top" style="height:300px;object-fit:cover;" alt="">
-    <div class="card-body px-2">
-      <h6><a href="{{ .Permalink }}" class="d-block my-3">{{.Title}}</a></h6>
-      <p class="card-text">{{ .Summary }}</p>
+  <article class="card burnsTest">
+    <a href="{{ .Permalink }}" class=""><img src="{{.Params.Image | absURL }}" class="card-img-top" style="height:300px;object-fit:cover;" alt=""></a>
+    <div class="card-body xpx-2 pt-0 pb-1" style="height:200px;">
+      <h6 style=""><a href="{{ .Permalink }}" class="d-block my-3">{{.Title}}</a></h6>
+      <p class="card-text">{{ .Summary | truncate 90}}</p>
+      <a href="{{ .Permalink }}"><button type="button" class="btn btn-primary float-right">Lees verder.</button></a>
     </div>
   </article>
 </div>

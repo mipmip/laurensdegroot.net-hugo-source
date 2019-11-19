@@ -1,9 +1,10 @@
 /* Button style */
+
 .btn {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
   font-family: $headlines-font;
-  text-transform: capitalize;
+  xtext-transform: capitalize;
   padding: 5px 6px 0 6px;
   border-radius: 0;
   border: 0px solid;
@@ -17,6 +18,20 @@
     outline: 0;
     box-shadow: 0 !important;
   }
+}
+
+$randomNumber: 0 - random(1);
+$randomNumber2: random(1);
+$randomNumber3: 0 - random(1);
+
+button:nth-child(1n) {
+  transform: scale(1) rotate($randomNumber + deg);
+}
+button:nth-child(2n) {
+  transform: scale(1) rotate($randomNumber2 + deg);
+}
+button:nth-child(3n) {
+  transform: scale(1) rotate($randomNumber3 + deg);
 }
 
 .btn-primary {

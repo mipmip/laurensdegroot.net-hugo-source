@@ -10,7 +10,7 @@ categories:
 tags:
   - "theater"
   - "columm"
-type: "post"
+type: "blog"
 ---
 
 In het theater zijn er vele gebruiken en rituelen, maar vooral erg veel

@@ -4,7 +4,7 @@ date: 13-11-19
 draft: false
 
 # post thumb
-image: "images/ldg-7.png"
+image: "images/zondergeyn.png"
 
 # meta description
 description: "this is meta description"

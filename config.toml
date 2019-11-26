@@ -76,22 +76,22 @@ weight = 4
     "1-lijst-agenda",
   ],
   [
-    "1-lijst-blog",
+    "1-fotokaart-blog",
     "2-poster-foto",
-  ],
-  [
-    "1-fotokaart-blog",
-    "1-tekstkaart-blog",
-    "1-fotokaart-blog"
-  ],
-  [
-    "3-fotokaart-blog"
-  ],
-  [
-    "1-fotokaart-blog",
-    "1-fotokaart-blog",
-    "1-tekstkaart-blog"
   ]
+#  [
+#    "1-lijst-blog",
+#    "1-tekstkaart-blog",
+#    "1-fotokaart-blog"
+#  ],
+#  [
+#    "3-fotokaart-blog"
+#  ],
+#  [
+#    "1-fotokaart-blog",
+#    "1-fotokaart-blog",
+#    "1-tekstkaart-blog"
+#  ]
 ]
 debug = false
 logo = "images/logo.svg"

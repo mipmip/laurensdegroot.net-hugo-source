@@ -1,27 +1,22 @@
 ---
-title: "Terugblik nederlands thrillerfestival 2019"
+categories:
+  - blog
 date: 10-11-19
+description: this is meta description
 draft: false
-
-# post thumb
-image: "images/tf.jpg"
+image: images/tf.jpg
+pubdate: 2020-1-3
+resources: []
+tags:
+  - thriller
+title: Terugblik nederlands thrillerfestival 2019
+type: blog
 weight: 300
 
-# meta description
-description: "this is meta description"
-
-# taxonomies
-categories:
-  - "blog"
-tags:
-  - "thriller"
-
-# post type
-type: "blog"
 ---
 
 Exact een week geleden sloot het Nederlands Thrillerfestival de editie
-van dit jaar af met de 13^e^ aflevering van de talkshow "Boek&Meer",
+van dit jaar af met de 13e aflevering van de talkshow "Boek&Meer",
 gepresenteerd door Laurens de Groot.
 
 Maar er was nog meer te beleven, want solo speelde hij "De geest van
@@ -35,6 +30,5 @@ dankzij de foto's van Richard Jetten.
 https://nederlandsthrillerfestival.nl/foto-albums/de-kus-van-de-roos
 
 https://nederlandsthrillerfestival.nl/foto-albums/de-geest-van-seghwaert-door-laurens-de-groot
-
 
 ![image](../../images/ft2.jpg)

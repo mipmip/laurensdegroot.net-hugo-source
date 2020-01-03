@@ -23,6 +23,11 @@ itemtitle = "Post"
   type = "string"
 
   [[collections.fields]]
+  key = "image"
+  title = "Image"
+  type = "string"
+
+  [[collections.fields]]
   key = "mainContent"
   title = "Content"
   type = "markdown"

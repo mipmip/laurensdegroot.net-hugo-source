@@ -1,4 +1,4 @@
-hugover = "0.61.0"
+hugover = "0.61.1"
 
 [[serve]]
 key = "default"
@@ -16,32 +16,40 @@ extension = "md"
 dataformat = "yaml"
 itemtitle = "Post"
 
-
   [[collections.fields]]
   key = "title"
-  title = "Title"
+  title = "Titel"
   type = "string"
+
+  [[collections.fields]]
+  key = "type"
+  title = "Type"
+  type = "select"
+
+  [[collections.fields.options]]
+  text = "Artikel"
+  value = "blog"
+
+  [[collections.fields.options]]
+  text = "Foto"
+  value = "foto"
 
   [[collections.fields]]
   key = "image"
-  title = "Image"
+  title = "Afbeelding"
   type = "string"
 
   [[collections.fields]]
-  key = "mainContent"
-  title = "Content"
-  type = "markdown"
-
-  [[collections.fields]]
   key = "pubdate"
-  title = "Pub Date"
+  title = "Publicatiedatum"
   type = "date"
   default = "now"
 
   [[collections.fields]]
   key = "draft"
-  title = "Draft"
+  title = "Concept"
   type = "boolean"
+  tip = "Wordt niet gepubliceerd."
 
   [[collections.fields]]
   key = "bundle-manager"
@@ -64,43 +72,116 @@ itemtitle = "Post"
     type = "string"
     multiLine = true
 
+  [[collections.fields]]
+  key = "mainContent"
+  title = "Content"
+  type = "markdown"
+
+[[singles]]
+key = "contactpagina"
+title = "Pagina: Contact"
+file = "content/contact/_index.md"
+dataformat = "yaml"
+
+  [[singles.fields]]
+  key = "title"
+  title = "Paginatitel"
+  type = "string"
+
+  [[singles.fields]]
+  key = "description"
+  title = "Meta: description"
+  type = "string"
+  multiLine = true
+
+  [[singles.fields]]
+  key = "keywords"
+  title = "Meta: keywords"
+  type = "string"
+  multiLine = true
+
+  [[singles.fields]]
+  key = "mainContent"
+  title = "Content"
+  type = "markdown"
+
+[[singles]]
+key = "perspagina"
+title = "Pagina: Pers"
+file = "content/pers/pers.md"
+dataformat = "yaml"
+
+  [[singles.fields]]
+  key = "title"
+  title = "Paginatitel"
+  type = "string"
+
+  [[singles.fields]]
+  key = "description"
+  title = "Meta: description"
+  type = "string"
+  multiLine = true
+
+  [[singles.fields]]
+  key = "keywords"
+  title = "Meta: keywords"
+  type = "string"
+  multiLine = true
+
+  [[singles.fields]]
+  key = "mainContent"
+  title = "Content"
+  type = "markdown"
+
+[[singles]]
+key = "agenda"
+title = "Agenda"
+file = "data/agenda2.yml"
+
+  [[singles.fields]]
+  key = "data"
+  title = "Data"
+  type = "accordion"
+
+    [[singles.fields.fields]]
+    key = "datum"
+    title = "Datum"
+    type = "string"
+    arrayTitle = true
+
+    [[singles.fields.fields]]
+    key = "voorstelling"
+    title = "Voorstelling"
+    type = "string"
+    arrayTitle = true
+
+    [[singles.fields.fields]]
+    key = "locatie"
+    title = "Locatie"
+    type = "string"
+
+  [[singles.fields]]
+  key = "accordion-section-info"
+  type = "info"
+  theme = "black-bare"
+  content = "Voeg hier de agendaitems toe"
+
 [[singles]]
 key = "mainConfig"
-title = "Main Config"
+title = "Website instellingen"
 file = "config.toml"
 
   [[singles.fields]]
   key = "title"
-  title = "Site Title"
+  title = "Site Titel"
   type = "string"
-  tip = "Your page title."
 
-#  [[singles.fields]]
-#  key = "baseURL"
-#  title = "Base URL"
-#  type = "readonly"
-#  tip = "Your site URL."
-#
-#  [[singles.fields]]
-#  key = "theme"
-#  title = "Theme"
-#  type = "readonly"
-#  tip = "The current theme."
-#
-#  [[singles.fields]]
-#  key = "languageCode"
-#  title = "Language Code"
-#  type = "readonly"
+  [[singles.fields]]
+  key = "baseURL"
+  title = "Base URL"
+  type = "readonly"
 
-#  [[singles.fields]]
-#  key = "googleAnalytics"
-#  title = "Google Analytics"
-#  type = "string"
-#  tip = "Provide a Google Analitics Tracking Code to enable analytics."
-
-#  [[singles.fields]]
-#  key = "enableRobotsTXT"
-#  title = "Enable Robots"
-#  type = "boolean"
-#  default = true
-#  tip = "If you want you page to be indexed, keep this enabled."
+  [[singles.fields]]
+  key = "theme"
+  title = "Theme"
+  type = "readonly"

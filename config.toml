@@ -11,8 +11,6 @@ disqusShortname = ""
 [outputs]
   home = ["HTML", "AMP", "RSS", "JSON"]
 
-
-
 ############################# Plugins ##############################
 [params.plugins]
 

@@ -76,7 +76,15 @@ weight = 4
   [
     "1-fotokaart-blog",
     "2-poster-foto",
-  ]
+  ],
+  [
+    "1-poster-foto",
+    "2-video-video",
+  ],
+#  [
+#    "1-tekstkaart-blog",
+#    "2-video-video",
+#  ]
 #  [
 #    "1-lijst-blog",
 #    "1-tekstkaart-blog",

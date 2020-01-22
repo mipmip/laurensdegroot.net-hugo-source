@@ -1,11 +1,15 @@
 <div class="col-md-4 mb-3">
+
   <article class="card burnsTest">
-    <a href="{{ .Permalink }}" class=""><img src="{{.Params.Image | absURL }}" class="card-img-top" style="height:300px;object-fit:cover;" alt=""></a>
-    <div class="card-body xpx-2 pt-0 pb-1" style="height:200px;">
+
+    <a href="{{ .Permalink }}" class=""><img src="{{.Params.Image | absURL }}" class="card-img-top" style="height:283px;object-fit:cover;" alt=""></a>
+
+    <div class="card-body xpx-2 pt-0 pb-1" style="height:189px;padding:20px 20px;">
       <h6 style=""><a href="{{ .Permalink }}" class="d-block my-3">{{.Title}}</a></h6>
       <p class="card-text">{{ .Summary | truncate 90}}</p>
-      <a href="{{ .Permalink }}"><button type="button" class="btn btn-primary float-right">Lees verder.</button></a>
+      <a href="{{ .Permalink }}"><button type="button" class="btn btn-primary xfloat-right" style="z-index: 999999999;position: absolute; bottom: 10px; right: 11px;">Lees verder.</button></a>
     </div>
   </article>
+
 </div>
 

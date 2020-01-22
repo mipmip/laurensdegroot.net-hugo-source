@@ -22,6 +22,11 @@ itemtitle = "Post"
   type = "string"
 
   [[collections.fields]]
+  key = "weight"
+  title = "Sorteerprioriteit"
+  type = "number"
+
+  [[collections.fields]]
   key = "type"
   title = "Type"
   type = "select"
@@ -167,13 +172,72 @@ file = "data/agenda.yml"
   content = "Voeg hier de agendaitems toe"
 
 [[singles]]
+key = "layout"
+title = "Voorpagina Indeling"
+file = "data/voorpaginalayout.yaml"
+
+  [[singles.fields]]
+  key = "rijen"
+  title = "Rijen"
+  type = "accordion"
+
+    [[singles.fields.fields]]
+    key = "kolommen"
+    title = "Kolommen"
+    type = "accordion"
+
+      [[singles.fields.fields.fields]]
+      key = "widgets"
+      title = "Widgets"
+      type = "select"
+      arrayTitle = true
+
+      [[singles.fields.fields.fields.options]]
+      text = "3-koloms: Foto"
+      value = "3-poster-foto"
+
+      [[singles.fields.fields.fields.options]]
+      text = "1-koloms: fotokaart"
+      value = "1-fotokaart-blog"
+
+      [[singles.fields.fields.fields.options]]
+      text = "1-koloms: lijstagenda"
+      value = "1-lijst-agenda"
+
+      [[singles.fields.fields.fields.options]]
+      text = "2-koloms: Foto"
+      value = "2-poster-foto"
+
+
+
+[[singles]]
 key = "mainConfig"
 title = "Website instellingen"
 file = "config.toml"
 
   [[singles.fields]]
   key = "title"
-  title = "Site Titel"
+  title = "Websitetitel"
+  type = "string"
+
+  [[singles.fields]]
+  key = "email"
+  title = "Emailadres"
+  type = "string"
+
+  [[singles.fields]]
+  key = "mobile"
+  title = "Telefoornummer"
+  type = "string"
+
+  [[singles.fields]]
+  key = "location"
+  title = "Locatie"
+  type = "string"
+
+  [[singles.fields]]
+  key = "copyright"
+  title = "Copyright tekst"
   type = "string"
 
   [[singles.fields]]

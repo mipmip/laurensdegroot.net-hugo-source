@@ -4,10 +4,12 @@
   <div class="container">
     <div class="row">
 
-      {{ $blogPages := sort (where .Site.RegularPages "Params.type" "blog") "File.Path" "desc" }}
-      {{ $fotoPages := sort (where .Site.RegularPages "Params.type" "foto") "File.Path" "desc" }}
+      {{ $blogPages := sort (where .Site.RegularPages "Params.type" "blog") "Weight" "desc" }}
+      {{ $fotoPages := sort (where .Site.RegularPages "Params.type" "foto") "Weight" "desc" }}
+      {{ $videoPages := sort (where .Site.RegularPages "Params.type" "video") "Weight" "desc" }}
       {{$.Scratch.Set "blogCounter" 0 }}
       {{$.Scratch.Set "fotoCounter" 0 }}
+      {{$.Scratch.Set "videoCounter" 0 }}
 
       {{ range .Site.Params.voorpagina_layout_schema }}
 
@@ -35,6 +37,11 @@
 
                 {{ $.Scratch.Set "renderPage" (index $fotoPages ($.Scratch.Get "fotoCounter"))}}
                 {{ $.Scratch.Set "fotoCounter" (add ($.Scratch.Get "fotoCounter") 1) }}
+
+            {{ else if eq (index $widget 2) "video" }}
+
+                {{ $.Scratch.Set "renderPage" (index $videoPages ($.Scratch.Get "videoCounter"))}}
+                {{ $.Scratch.Set "videoCounter" (add ($.Scratch.Get "videoCounter") 1) }}
 
             {{end}}
 

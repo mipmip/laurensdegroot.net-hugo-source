@@ -1,0 +1,13 @@
+rijen:
+  - kolommen:
+      - widgets: 3-poster-foto
+  - kolommen:
+      - widgets: 1-fotokaart-blog
+      - widgets: 1-fotokaart-blog
+      - widgets: 1-lijst-agenda
+  - kolommen:
+      - widgets: 1-fotokaart-blog
+      - widgets: 2-poster-foto
+  - kolommen:
+      - widgets: 1-lijst-agenda
+      - widgets: 2-poster-foto

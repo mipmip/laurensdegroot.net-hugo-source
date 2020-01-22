@@ -1,25 +1,19 @@
 ---
-title: "Stijlvoorbeelden"
-date: 2019-10-29T10:07:47+06:00
-draft: true
-
-weight: 500
-
-# post thumb
-image: "images/ldg-5.png"
-
-# meta description
-description: "this is meta description"
-
-# taxonomies
 categories:
-  - "blog"
-  - "theater"
+  - blog
+  - theater
+date: '2019-10-29T04:07:47.000Z'
+description: this is meta description
+draft: false
+image: images/ldg-5.png
+pubdate: 2020-1-22
+resources: []
 tags:
-  - "voorbeeld"
+  - voorbeeld
+title: Stijlvoorbeelden
+type: blog
+weight: 10
 
-# post type
-type: "blog"
 ---
 
 # Heading 1

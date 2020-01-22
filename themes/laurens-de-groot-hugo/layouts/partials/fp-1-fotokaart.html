@@ -1,8 +1,13 @@
 <div class="col-md-4 mb-3">
 
   <article class="card burnsTest">
-
-    <a href="{{ .Permalink }}" class=""><img src="{{.Params.Image | absURL }}" class="card-img-top" style="height:283px;object-fit:cover;" alt=""></a>
+    <a href="{{ .Permalink }}" class="">
+      {{ $images := .Resources.Match "headerimgs/*" }}
+      {{ range first 1 $images }}
+      {{ $imageResource :=  .  }}
+      <img src="{{.Permalink}}" class="card-img-top" style="height:283px;object-fit:cover;" alt="">
+      {{ end }}
+    </a>
 
     <div class="card-body xpx-2 pt-0 pb-1" style="height:189px;padding:20px 20px;">
       <h6 style=""><a href="{{ .Permalink }}" class="d-block my-3">{{.Title}}</a></h6>

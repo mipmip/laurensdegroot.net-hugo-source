@@ -1,8 +1,13 @@
 ---
-title: "poster 1"
+description: this is meta description
 draft: false
-weight: 200
-image: "images/header-foto.jpg"
-description: "this is meta description"
-type: "foto"
+image: images/header-foto.jpg
+mainContent: ''
+pubdate: 2020-1-22
+resources: []
+title: poster 1
+type: foto
+weight: 2000000
+
 ---
+

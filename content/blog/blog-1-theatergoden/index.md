@@ -1,16 +1,19 @@
 ---
-title: "Theatergoden"
-date: 2019-10-29T10:07:47+06:00
-draft: false
-weight: 100
-image: "images/ldg-1.png"
-description: "this is meta description"
 categories:
-  - "Columns"
+  - Columns
+date: '2019-10-29T04:07:47.000Z'
+description: this is meta description
+draft: false
+image: images/ldg-1.png
+pubdate: 2020-1-22
+resources: []
 tags:
-  - "theater"
-  - "columm"
-type: "blog"
+  - theater
+  - columm
+title: Theatergoden
+type: blog
+weight: 100
+
 ---
 
 In het theater zijn er vele gebruiken en rituelen, maar vooral erg veel

@@ -9,8 +9,11 @@
         </article>
       </div>
       <div class="col-md-8">
-        <img src="{{.Params.image}}" class="card-img-top" style="height:300px;object-fit:cover;" alt="">
+        {{ $images := .Resources.Match "headerimgs/*" }}
+        {{ range first 1 $images }}
+        {{ $imageResource :=  .  }}
+        <img src="{{.Permalink}}" class="card-img-top" style="height:300px;object-fit:cover;" alt="">
+        {{ end }}
       </div>
     </div>
-
 </div>

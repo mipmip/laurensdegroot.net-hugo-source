@@ -1,23 +1,18 @@
 ---
-title: "Voorstelling en boekverkoop"
-date: 13-11-19
-draft: false
-
-# post thumb
-image: "images/zondergeyn.png"
-
-# meta description
-description: "this is meta description"
-
-# taxonomies
 categories:
-  - "blog"
+  - blog
+date: 13-11-19
+description: this is meta description
+draft: false
+image: images/zondergeyn.png
+pubdate: 2020-1-22
+resources: []
 tags:
-  - "kerst"
-
-# post type
-type: "blog"
+  - kerst
+title: Voorstelling en boekverkoop
+type: blog
 weight: 200
+
 ---
 
 "Het kerstfeest van meneer Zondergeyn" is terug! Op 14 december speelt

@@ -39,6 +39,10 @@ itemtitle = "Post"
   text = "Foto"
   value = "foto"
 
+  [[collections.fields.options]]
+  text = "Video"
+  value = "video"
+
   [[collections.fields]]
   key = "image"
   title = "Afbeelding"
@@ -57,25 +61,26 @@ itemtitle = "Post"
   tip = "Wordt niet gepubliceerd."
 
   [[collections.fields]]
+  title = "Headerbeelden"
   key = "bundle-manager"
   type = "bundle-manager"
-  path = "imgs"
+  path = "headerimgs"
   extensions = [
     "png",
     "jpg",
     "gif"
   ]
 
-    [[collections.fields.fields]]
-    key = "title"
-    title = "Title"
-    type = "string"
-
-    [[collections.fields.fields]]
-    key = "description"
-    title = "Description"
-    type = "string"
-    multiLine = true
+#    [[collections.fields.fields]]
+#    key = "title"
+#    title = "Title"
+#    type = "string"
+#
+#    [[collections.fields.fields]]
+#    key = "description"
+#    title = "Description"
+#    type = "string"
+#    multiLine = true
 
   [[collections.fields]]
   key = "mainContent"

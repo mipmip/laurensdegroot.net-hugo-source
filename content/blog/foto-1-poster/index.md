@@ -9,6 +9,5 @@ resources: []
 title: poster 1
 type: foto
 weight: 100
-
 ---
 

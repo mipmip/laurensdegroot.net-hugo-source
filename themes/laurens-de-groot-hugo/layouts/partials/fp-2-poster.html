@@ -1,4 +1,8 @@
 <div class="col-md-8 mb-3">
-  <img src="{{.Params.image}}" class="card-img-top" style="height:487px;object-fit:cover;" alt="">
+    {{ $images := .Resources.Match "headerimgs/*" }}
+    {{ range first 1 $images }}
+    {{ $imageResource :=  .  }}
+    <img src="{{.Permalink}}" class="card-img-top" style="height:487px;object-fit:cover;" alt="">
+    {{ end }}
 </div>
 

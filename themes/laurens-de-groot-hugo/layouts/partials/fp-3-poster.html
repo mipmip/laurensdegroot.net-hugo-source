@@ -1,4 +1,8 @@
 <div class="col-md-12 mb-3">
-  <img class="img-fluid" src="{{.Params.image}}" alt="">
+  {{ $images := .Resources.Match "headerimgs/*" }}
+  {{ range first 1 $images }}
+  {{ $imageResource :=  .  }}
+  <img class="img-fluid" src="{{.Permalink}}" alt="">
+  {{ end }}
 </div>
 

@@ -2,14 +2,12 @@
 
   <h3 class="diapos"><span>Agenda.</span></h3>
 
-  {{ range first 4 .Data.agenda}}
-    {{ range $key, $value := . }}
-      <p class="pt">
-      <h6>{{ index $value 0 }}</h6>
-      <strong>{{ $key }}</strong></br>
-      {{ index $value 1 }}<br/>
-      </p>
-    {{ end }}
+  {{ range first 4 .Data.agenda.data}}
+  <p class="pt">
+    <h6>{{ .datum }}</h6>
+    <strong>{{ .voorstelling }}</strong></br>
+    {{ .locatie }}<br/>
+    </p>
   {{ end }}
 
   <a href="/agenda"><button type="button" class="btn btn-primary float-right">Meer.</button></a>

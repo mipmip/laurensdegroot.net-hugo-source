@@ -136,7 +136,7 @@ dataformat = "yaml"
 [[singles]]
 key = "agenda"
 title = "Agenda"
-file = "data/agenda2.yml"
+file = "data/agenda.yml"
 
   [[singles.fields]]
   key = "data"

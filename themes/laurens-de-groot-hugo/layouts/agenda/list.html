@@ -7,22 +7,18 @@
         <h3 class="diapos"><span>Agenda.</span></h3>
       </div>
     </div>
-
     <div class="row">
 
-      {{ range $.Site.Data.agenda}}
-      {{ range $key, $value := . }}
+      {{ range $.Site.Data.agenda.data}}
       <div class="offset-md-1 col-md-4 mb-3 card">
-
         <p class="pt">
-        <h6>{{ index $value 0 }}</h6>
-        <strong>{{ $key }}</strong></br>
-        {{ index $value 1 }}<br/>
+        <h6>{{.datum}}</h6>
+        <strong>{{.voorstelling}}</strong></br>
+        <br/>
+        {{.locatie}}
         </p>
       </div>
       {{ end }}
-      {{ end }}
-
 
     </div>
   </div>

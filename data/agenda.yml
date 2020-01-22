@@ -1,72 +1,14 @@
----
-- 24 DECEMBER:
-  - "Het kerstfeest van meneer Zondergeyn"
-  - Bibliotheek, De Lier
-
-- 14 DECEMBER:
-  - "Het kerstfeest van meneer Zondergeyn"
-  - Koperen Kees, Naaldwijk
-
-- 26 NOVEMBER:
-  - "De beklimming van de Boekenberg"
-  - Theater De Stoep, Spijkenisse (besloten)
-
-- 26 NOVEMBER:
-  - lezing
-  - Schatbewakers, Zoetermeer
-
-    #- 15 NOVEMBER:
-    #  - TV-uitzending,
-    #  - '"Centraal: Beenlampman", NPO2'
-    #
-    #- 3 NOVEMBER:
-    #  - presentatie "Boek&Meer #13"
-    #  - Forum Zoetermeer
-    #
-    #- 1 NOVEMBER:
-    #  - '"De kus van de roos" / "De verhoren" voor Funktioneel Naakt;'
-    #  - Thrillerfestival, Zoetermeer
-    #
-    #- 1 NOVEMBER:
-    #  - "De geest van Seghwaert"
-    #  - Thrillerfestival, Zoetermeer
-    #
-    #- 27 OKTOBER:
-    #  - presentatie Uitreiking MAX Gouden Vleermuis
-    #  - Stadstheater, Zoetermeer
-    #
-    #- 25 OKTOBER:
-    #  - vertellen
-    #  - 2Flamingo's, Naaldwijk (besloten)
-    #
-    #- 19 OKTOBER:
-    #  - '"De geest van Vanyan" voor Agatha Events'
-    #  - Hotel De Roskam, Rheden
-    #
-    #- 6 OKTOBER:
-    #  - presentatie "Boek&Meer #12"
-    #  - Forum Zoetermeer
-    #
-    #- 2 OKTOBER:
-    #  - vertellen
-    #  - Amalia Astro, Baarn (besloten)
-    #
-    #- 28 SEPTEMBER:
-    #  - "De Afvalbutlers"
-    #  - LekkoDagen, Wijk bij Duurstede
-    #
-    #- 14 SEPTEMBER:
-    #  - "De wonderbaarlijke reis van Hansken, de Rijswijkse olifant"
-    #  - Open Monumentendag, Museum Rijswijk
-    #
-    #- 6 SEPTEMBER:
-    #  - '"Hunker" voor Cinergy'
-    #  - Radboud Universiteit, Nijmegen (besloten)
-    #
-    #- 5 SEPTEMBER:
-    #  - vertellen
-    #  - Bibliotheek Zoetermeer (besloten)
-    #
-    #- 1 SEPTEMBER:
-    #  - "De Afvalbutlers"
-    #  - Noord-AA strand, Zoetermeer
+data:
+  - datum: 26 NOVEMBER
+    locatie: 'Schatbewakers, Zoetermeer'
+    voorstelling: lezing
+  - datum: 26 NOVEMBER
+    locatie: 'Theater De Stoep, Spijkenisse (besloten)'
+    voorstelling: De beklimming van de Boekenberg
+  - datum: 24 DECEMBER
+    datum2: '2020-01-22'
+    locatie: 'Bibliotheek, De Lier'
+    voorstelling: Het kerstfeest van meneer Zondergeyn
+  - datum: 14 DECEMBER
+    locatie: 'Koperen Kees, Naaldwijk'
+    voorstelling: Het kerstfeest van meneer Zondergeyn

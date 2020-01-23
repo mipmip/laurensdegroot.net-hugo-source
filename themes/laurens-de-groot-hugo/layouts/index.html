@@ -11,11 +11,10 @@
       {{$.Scratch.Set "fotoCounter" 0 }}
       {{$.Scratch.Set "videoCounter" 0 }}
 
-      {{ range .Site.Params.voorpagina_layout_schema }}
+      {{ range .Site.Data.voorpaginalayout.rijen}}
+        {{ range .kolommen }}
 
-        {{ range . }}
-
-          {{ $widget := split . "-" }}
+          {{ $widget := split .widgets "-" }}
 
           {{$.Scratch.Set "renderPage" "skip" }}
 
@@ -52,10 +51,9 @@
 
           {{end}}
 
+        {{end}}
+      {{end}}
 
-        {{ end }}
-
-      {{ end }}
 
     </div>
   </div>

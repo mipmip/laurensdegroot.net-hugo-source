@@ -27,8 +27,8 @@ zijn ook geschreven door Laurens de Groot,
 In het fotoalbum van het Nederlands Thrillerfestival kun je nagenieten,
 dankzij de foto's van Richard Jetten.
 
-https://nederlandsthrillerfestival.nl/foto-albums/de-kus-van-de-roos
+[Fotoalbum De Kus van de Roos](https://nederlandsthrillerfestival.nl/foto-albums/de-kus-van-de-roos)
 
-https://nederlandsthrillerfestival.nl/foto-albums/de-geest-van-seghwaert-door-laurens-de-groot
+[Fotoalbum De Geest van Seghwaert](https://nederlandsthrillerfestival.nl/foto-albums/de-geest-van-seghwaert-door-laurens-de-groot)
 
-![image](../../images/ft2.jpg)
+![image](ft2.jpg)

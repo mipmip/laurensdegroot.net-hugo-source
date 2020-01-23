@@ -151,7 +151,7 @@ Markdown | Less | Pretty
 
 ##### Image
 
-![image](../../images/ldg-1.png)
+![image](ldg-1.png)
 
 <hr>
 

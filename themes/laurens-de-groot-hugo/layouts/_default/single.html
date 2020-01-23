@@ -5,7 +5,11 @@
     <div class="row">
 
       <div class="col-lg-12 mx-auto  px-0">
-        <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 " alt="{{ .Title | markdownify }}">
+            {{ $images := (.Resources.ByType "image").Match "headerimgs/*" }}
+      {{ range first 1 $images }}
+      {{ $imageResource :=  .  }}
+      <img src="{{ .Permalink }}" class="img-fluid w-100 " alt="{{ .Title | markdownify }}">
+      {{ end }}
       </div>
       <div class="col-lg-12 mx-auto container-back-1 px-5">
 

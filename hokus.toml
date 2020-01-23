@@ -14,45 +14,28 @@ title = "Blogs"
 folder = "content/blog/"
 extension = "md"
 dataformat = "yaml"
-itemtitle = "Post"
+itemtitle = "Blogitem"
 
   [[collections.fields]]
   key = "title"
   title = "Titel"
   type = "string"
 
-  [[collections.fields]]
-  key = "weight"
-  title = "Sorteerprioriteit"
-  type = "number"
-
-  [[collections.fields]]
-  key = "type"
-  title = "Type"
-  type = "select"
-
-  [[collections.fields.options]]
-  text = "Artikel"
-  value = "blog"
-
-  [[collections.fields.options]]
-  text = "Foto"
-  value = "foto"
-
-  [[collections.fields.options]]
-  text = "Video"
-  value = "video"
-
-  [[collections.fields]]
-  key = "image"
-  title = "Afbeelding"
-  type = "string"
+#  [[collections.fields]]
+#  key = "weight"
+#  title = "Sorteerprioriteit"
+#  type = "number"
 
   [[collections.fields]]
   key = "pubdate"
   title = "Publicatiedatum"
   type = "date"
   default = "now"
+
+  [[collections.fields]]
+  key = "categories"
+  title = "Categorieën"
+  type = "chips"
 
   [[collections.fields]]
   key = "draft"
@@ -71,21 +54,50 @@ itemtitle = "Post"
     "gif"
   ]
 
-#    [[collections.fields.fields]]
-#    key = "title"
-#    title = "Title"
-#    type = "string"
-#
-#    [[collections.fields.fields]]
-#    key = "description"
-#    title = "Description"
-#    type = "string"
-#    multiLine = true
+  [[collections.fields.fields]]
+  key = "thumb"
+  title = "Thumbnail"
+  type = "bundle-image-thumbnail"
 
   [[collections.fields]]
   key = "mainContent"
   title = "Content"
   type = "markdown"
+
+
+[[collections]]
+key = "fotos"
+title = "Foto's"
+folder = "content/foto/"
+extension = "md"
+dataformat = "yaml"
+itemtitle = "Foto's"
+
+#  [[collections.fields]]
+#  key = "weight"
+#  title = "Sorteerprioriteit"
+#  type = "number"
+
+  [[collections.fields]]
+  title = "Headerbeelden"
+  key = "bundle-manager"
+  type = "bundle-manager"
+  path = "headerimgs"
+  extensions = [
+    "png",
+    "jpg",
+    "gif"
+  ]
+
+  [[collections.fields.fields]]
+  key = "thumb"
+  title = "Thumbnail"
+  type = "bundle-image-thumbnail"
+
+#  [[collections.fields]]
+#  key = "mainContent"
+#  title = "Content"
+#  type = "markdown"
 
 [[singles]]
 key = "contactpagina"
@@ -138,6 +150,18 @@ dataformat = "yaml"
   type = "string"
   multiLine = true
 
+
+  [[singles.fields]]
+  title = "Headerbeelden"
+  key = "bundle-manager"
+  type = "bundle-manager"
+  path = "headerimgs"
+  extensions = [
+    "png",
+    "jpg",
+    "gif"
+  ]
+
   [[singles.fields]]
   key = "mainContent"
   title = "Content"
@@ -187,33 +211,70 @@ file = "data/voorpaginalayout.yaml"
   type = "accordion"
 
     [[singles.fields.fields]]
+    key = "naam"
+    title = "Rijnaam"
+    type = "string"
+    tip = "Geef een naam zodat je de rij kunt hernennen"
+    arrayTitle = true
+
+    [[singles.fields.fields]]
+    key = "verborgen"
+    title = "Verborgen"
+    type = "boolean"
+
+    [[singles.fields.fields]]
     key = "kolommen"
     title = "Kolommen"
     type = "accordion"
 
       [[singles.fields.fields.fields]]
-      key = "widgets"
-      title = "Widgets"
+      key = "aantalkol"
+      title = "Breedte in kolommen"
+      type = "select"
+
+        [[singles.fields.fields.fields.options]]
+        text = "1"
+        value = "1"
+
+        [[singles.fields.fields.fields.options]]
+        text = "2"
+        value = "2"
+
+        [[singles.fields.fields.fields.options]]
+        text = "3"
+        value = "3"
+
+      [[singles.fields.fields.fields]]
+      key = "widget"
+      title = "Widget"
       type = "select"
       arrayTitle = true
 
-      [[singles.fields.fields.fields.options]]
-      text = "3-koloms: Foto"
-      value = "3-poster-foto"
+        [[singles.fields.fields.fields.options]]
+        text = "foto"
+        value = "poster"
 
-      [[singles.fields.fields.fields.options]]
-      text = "1-koloms: fotokaart"
-      value = "1-fotokaart-blog"
+        [[singles.fields.fields.fields.options]]
+        text = "video"
+        value = "video"
 
-      [[singles.fields.fields.fields.options]]
-      text = "1-koloms: lijstagenda"
-      value = "1-lijst-agenda"
+        [[singles.fields.fields.fields.options]]
+        text = "foto en tekst"
+        value = "fototekst"
 
-      [[singles.fields.fields.fields.options]]
-      text = "2-koloms: Foto"
-      value = "2-poster-foto"
+        [[singles.fields.fields.fields.options]]
+        text = "agendalijst met laatste 4 items"
+        value = "lijstagenda"
 
+        [[singles.fields.fields.fields.options]]
+        text = "bloglijst met laatste items"
+        value = "lijstblog"
 
+      [[singles.fields.fields.fields]]
+      key = "code"
+      title = "Code"
+      type = "string"
+      tip = "Geef de unieke code van het blogitem, de foto, of de youtube-video"
 
 [[singles]]
 key = "mainConfig"

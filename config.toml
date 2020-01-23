@@ -6,7 +6,7 @@ title = "Laurens de Groot"
 theme = ["hugo-debugprint", "laurens-de-groot-hugo"]
 summaryLength = "10"
 paginate = 6
-disqusShortname = ""
+#disqusShortname = ""
 
 [outputs]
   home = ["HTML", "AMP", "RSS", "JSON"]
@@ -60,45 +60,9 @@ name = "Contact."
 URL = "contact"
 weight = 4
 
-
 #################### default parameters ################################
 [params]
 
-  voorpagina_layout_schema = [
-  [
-    "3-poster-foto",
-  ],
-  [
-    "1-fotokaart-blog",
-    "1-fotokaart-blog",
-    "1-lijst-agenda",
-  ],
-  [
-    "1-fotokaart-blog",
-    "2-poster-foto",
-  ],
-  [
-    "1-poster-foto",
-    "2-video-video",
-  ],
-#  [
-#    "1-tekstkaart-blog",
-#    "2-video-video",
-#  ]
-#  [
-#    "1-lijst-blog",
-#    "1-tekstkaart-blog",
-#    "1-fotokaart-blog"
-#  ],
-#  [
-#    "3-fotokaart-blog"
-#  ],
-#  [
-#    "1-fotokaart-blog",
-#    "1-fotokaart-blog",
-#    "1-tekstkaart-blog"
-#  ]
-]
 debug = false
 logo = "images/logo.svg"
 home = "Home."

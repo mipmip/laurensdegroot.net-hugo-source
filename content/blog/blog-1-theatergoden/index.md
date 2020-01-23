@@ -1,6 +1,7 @@
 ---
 categories:
   - Columns
+  - artikelen
 date: '2019-10-29T04:07:47.000Z'
 description: this is meta description
 draft: false
@@ -8,11 +9,12 @@ image: images/ldg-1.png
 pubdate: 2020-1-22
 resources: []
 tags:
-  - theater
-  - columm
+  - Theater
+  - Columm
 title: Theatergoden
 type: blog
 weight: 100
+
 ---
 
 In het theater zijn er vele gebruiken en rituelen, maar vooral erg veel

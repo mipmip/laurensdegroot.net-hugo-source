@@ -1,0 +1,32 @@
+{{ if eq .wp.aantalkol "1" }}
+  {{.ctx.Scratch.Set "width" "4" }}
+{{ else if eq .wp.aantalkol "2" }}
+  {{.ctx.Scratch.Set "width" "8" }}
+{{ else if eq .wp.aantalkol "3" }}
+  {{.ctx.Scratch.Set "width" "12" }}
+{{ end }}
+
+<div class="col-md-{{.ctx.Scratch.Get "width"}} mb-3">
+  {{ $page := printf "/blog/%s/index.md" .wp.code }}
+
+  {{ with .ctx.Site.GetPage $page }}
+
+    <article class="card burnsTest">
+      <a href="{{ .Permalink }}" class="">
+        {{ $images := (.Resources.ByType "image").Match "headerimgs/*" }}
+        {{ range first 1 $images }}
+        {{ $imageResource :=  .  }}
+        <img src="{{.Permalink}}" class="card-img-top" style="height:283px;object-fit:cover;" alt="">
+        {{ end }}
+      </a>
+
+      <div class="card-body xpx-2 pt-0 pb-1" style="height:189px;padding:20px 20px;">
+        <h6 style=""><a href="{{ .Permalink }}" class="d-block my-3">{{.Title}}</a></h6>
+        <p class="card-text">{{ .Summary | truncate 90}}</p>
+        <a href="{{ .Permalink }}"><button type="button" class="btn btn-primary xfloat-right" style="z-index: 999999999;position: absolute; bottom: 10px; right: 11px;">Lees verder.</button></a>
+      </div>
+    </article>
+
+  {{ end }}
+
+</div>

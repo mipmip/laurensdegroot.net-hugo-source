@@ -1,13 +1,37 @@
 rijen:
   - kolommen:
-      - widgets: 3-poster-foto
+      - aantalkol: '3'
+        code: foto-1-poster
+        widget: poster
+    naam: headerbeeld
+    verborgen: false
   - kolommen:
-      - widgets: 1-fotokaart-blog
-      - widgets: 1-fotokaart-blog
-      - widgets: 1-lijst-agenda
+      - aantalkol: '1'
+        code: blog-6-terugblik-nederlands-thrillerfestival-de-editie
+        widget: fototekst
+      - aantalkol: '1'
+        code: blog-2-voorstelling-en-boekverkoop
+        widget: fototekst
+      - aantalkol: '1'
+        code: ''
+        widget: lijstagenda
+    naam: 1e rij
+    verborgen: false
   - kolommen:
-      - widgets: 1-fotokaart-blog
-      - widgets: 2-poster-foto
+      - aantalkol: '1'
+        code: blog-1-theatergoden
+        widget: fototekst
+      - aantalkol: '2'
+        code: foto-2-poster
+        widget: poster
+    naam: 2e rij
+    verborgen: false
   - kolommen:
-      - widgets: 1-lijst-agenda
-      - widgets: 2-poster-foto
+      - aantalkol: '2'
+        code: l3zb9dP_69k
+        widget: video
+      - aantalkol: '1'
+        code: foto-3
+        widget: poster
+    naam: 3e rij
+    verborgen: false

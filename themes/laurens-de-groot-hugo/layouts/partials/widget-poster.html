@@ -1,0 +1,22 @@
+{{ if eq .wp.aantalkol "1" }}
+  {{.ctx.Scratch.Set "width" "4" }}
+{{ else if eq .wp.aantalkol "2" }}
+  {{.ctx.Scratch.Set "width" "8" }}
+{{ else if eq .wp.aantalkol "3" }}
+  {{.ctx.Scratch.Set "width" "12" }}
+{{ end }}
+
+<div class="col-md-{{.ctx.Scratch.Get "width"}} mb-3">
+  {{ $page := printf "/foto/%s/index.md" .wp.code }}
+
+  {{ with .ctx.Site.GetPage $page }}
+
+    {{ $images := .Resources.Match "headerimgs/*" }}
+    {{ range first 1 $images }}
+    {{ $imageResource :=  .  }}
+    <img src="{{.Permalink}}" class="card-img-top" style="height:487px;object-fit:cover;" alt="">
+    {{ end }}
+
+    {{ end }}
+
+</div>

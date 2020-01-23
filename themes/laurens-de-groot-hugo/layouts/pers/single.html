@@ -4,7 +4,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <img src="{{ .Params.Image | absURL }}" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+
+        {{ $images := (.Resources.ByType "image").Match "headerimgs/*" }}
+        {{ range first 1 $images }}
+        {{ $imageResource :=  .  }}
+        <img src="{{ .PermalinkL }}" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        {{ end }}
+
         <h4 class="widget-title">{{ .Title | markdownify }}</h4>
         <div class="content">
           {{ .Content }}

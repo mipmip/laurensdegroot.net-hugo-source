@@ -12,35 +12,49 @@
       {{$.Scratch.Set "videoCounter" 0 }}
 
       {{ range .Site.Data.voorpaginalayout.rijen}}
-        {{ range .kolommen }}
+        <br/>
 
-          {{ $widget := split .widgets "-" }}
+        {{ if ne .verborgen true }}
 
-          {{$.Scratch.Set "renderPage" "skip" }}
+          {{ range .kolommen }}
 
-          {{ if eq (index $widget 1) "lijst" }}
+            {{/* partial "debugprint.html" . */}}
 
-              {{ $partial := printf "fp-%s-%s%s.html" (index ($widget) 0) (index ($widget) 1) (index ($widget) 2) }}
+            {{ $partial := printf "widget-%s.html" .widget }}
+            {{- partial $partial (dict "wp" . "ctx" $) -}}
 
-              {{- partial $partial $.Site -}}
+            {{/*
+            {{.widget}} 
+            {{.aantalkol}} 
+            {{.code}} |
 
-          {{else}}
+            {{ $widget := split .widgets "-" }}
+
+            {{$.Scratch.Set "renderPage" "skip" }}
+
+            {{ if eq (index $widget 1) "lijst" }}
+
+            {{ $partial := printf "fp-%s-%s%s.html" (index ($widget) 0) (index ($widget) 1) (index ($widget) 2) }}
+
+            {{- partial $partial $.Site -}}
+
+            {{else}}
             {{ if eq (index $widget 2) "blog" }}
 
-              {{ if (len $blogPages) gt ($.Scratch.Get "blogCounter")}}
-                {{ $.Scratch.Set "renderPage" (index $blogPages ($.Scratch.Get "blogCounter"))}}
-                {{ $.Scratch.Set "blogCounter" (add ($.Scratch.Get "blogCounter") 1) }}
-              {{end}}
+            {{ if (len $blogPages) gt ($.Scratch.Get "blogCounter")}}
+            {{ $.Scratch.Set "renderPage" (index $blogPages ($.Scratch.Get "blogCounter"))}}
+            {{ $.Scratch.Set "blogCounter" (add ($.Scratch.Get "blogCounter") 1) }}
+            {{end}}
 
             {{ else if eq (index $widget 2) "foto" }}
 
-                {{ $.Scratch.Set "renderPage" (index $fotoPages ($.Scratch.Get "fotoCounter"))}}
-                {{ $.Scratch.Set "fotoCounter" (add ($.Scratch.Get "fotoCounter") 1) }}
+            {{ $.Scratch.Set "renderPage" (index $fotoPages ($.Scratch.Get "fotoCounter"))}}
+            {{ $.Scratch.Set "fotoCounter" (add ($.Scratch.Get "fotoCounter") 1) }}
 
             {{ else if eq (index $widget 2) "video" }}
 
-                {{ $.Scratch.Set "renderPage" (index $videoPages ($.Scratch.Get "videoCounter"))}}
-                {{ $.Scratch.Set "videoCounter" (add ($.Scratch.Get "videoCounter") 1) }}
+            {{ $.Scratch.Set "renderPage" (index $videoPages ($.Scratch.Get "videoCounter"))}}
+            {{ $.Scratch.Set "videoCounter" (add ($.Scratch.Get "videoCounter") 1) }}
 
             {{end}}
 
@@ -49,8 +63,10 @@
             {{- partial $partial ($.Scratch.Get "renderPage") -}}
             {{ end }}
 
-          {{end}}
+            {{end}}
+            */}}
 
+          {{end}}
         {{end}}
       {{end}}
 

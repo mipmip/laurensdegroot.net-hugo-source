@@ -229,3 +229,7 @@ textarea.form-control{
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
   background: $primary-color !important;
 }
+
+.content img{
+  max-width: 100%
+}

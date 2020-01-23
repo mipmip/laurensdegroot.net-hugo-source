@@ -3,16 +3,34 @@
 <!-- blog post -->
 <section class="section-sm">
   <div class="container">
+
     <div class="row">
 
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
-          {{ range $paginator.Pages }}
+      <div class="col-9 mt-5">
 
-          {{ $partial := printf "fp-1-fotokaart.html" }}
-          {{- partial $partial . -}}
+        <div class="container">
 
+          <div class="row">
 
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+            {{ range $paginator.Pages }}
+
+            {{ $partial := printf "fp-1-05-fotokaart.html" }}
+            {{- partial $partial . -}}
+
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 mt-5">
+        <h5>Categorieën</h5>
+          {{ range .Site.Taxonomies.categories }}
+          <span class="elite"><a href="{{ .Page.RelPermalink }}">[{{ .Page.Title }}.]</a></span> 
           {{ end }}
+      </div>
+
+
 
       <!-- pagination -->
       <div class="col-12 mt-5">

@@ -2,7 +2,7 @@
 
   <article class="card burnsTest">
     <a href="{{ .Permalink }}" class="">
-      {{ $images := .Resources.Match "headerimgs/*" }}
+      {{ $images := (.Resources.ByType "image").Match "headerimgs/*" }}
       {{ range first 1 $images }}
       {{ $imageResource :=  .  }}
       <img src="{{.Permalink}}" class="card-img-top" style="height:283px;object-fit:cover;" alt="">

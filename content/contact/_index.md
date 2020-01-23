@@ -1,7 +1,7 @@
 ---
 date: '2019-10-29T07:49:23.000Z'
 description: this is meta description
-draft: true
+draft: false
 keywords: ''
 title: Contact
 type: contact

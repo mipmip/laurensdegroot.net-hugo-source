@@ -5,8 +5,8 @@
   {{ range first 4 .Data.agenda.data}}
   <p class="pt">
     <h6>{{ .datum }}</h6>
-    <strong>{{ .voorstelling }}</strong></br>
-    {{ .locatie }}<br/>
+    <strong class="elite">{{ .voorstelling }}</strong></br>
+    <span class="elite">{{ .locatie }}</span><br/>
     </p>
   {{ end }}
 

@@ -13,7 +13,6 @@ tags:
 title: Theatergoden
 type: blog
 weight: 100
-
 ---
 
 In het theater zijn er vele gebruiken en rituelen, maar vooral erg veel

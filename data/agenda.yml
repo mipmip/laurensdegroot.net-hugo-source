@@ -1,6 +1,6 @@
 data:
-  - datum: 26 NOVEMBER
-    locatie: 'Schatbewakers, Zoetermeer'
+  - datum: 20 MAART
+    locatie: Zoetermeer
     voorstelling: lezing
   - datum: 26 NOVEMBER
     locatie: 'Theater De Stoep, Spijkenisse (besloten)'
@@ -12,3 +12,6 @@ data:
   - datum: 14 DECEMBER
     locatie: 'Koperen Kees, Naaldwijk'
     voorstelling: Het kerstfeest van meneer Zondergeyn
+  - datum: 26 NOVEMBER
+    locatie: 'Schatbewakers, Zoetermeer'
+    voorstelling: lezing

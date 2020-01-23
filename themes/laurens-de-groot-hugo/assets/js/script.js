@@ -29,7 +29,6 @@
   verijdelplaats();
   verijdelstelin();
   $( window ).resize(function() {
-    verijdelplaats();
     verijdelstelin();
   });
 
@@ -37,6 +36,7 @@
 
 function verijdelplaats(){
 
+  console.log('verijdelplaats');
   var navwidth = $("#navbar").width();
   var navoffset = $("#navbar").offset().left;
   var pageheight = $(document).height();
@@ -55,6 +55,7 @@ function verijdelplaats(){
 }
 
 function verijdelstelin(){
+  console.log('verijdelstelin');
 
   var navwidth = $("#navbar").width();
   var navoffset = $("#navbar").offset().left;

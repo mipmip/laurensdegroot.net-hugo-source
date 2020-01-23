@@ -9,7 +9,7 @@
       </div>
       <div class="col-lg-12 mx-auto container-back-1 px-5">
 
-        <div class="mt-4 mb-4 elite">
+        <div class="mt-4 mb-4 elite text-right">
           {{ range .Params.Categories }}
           <a href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}"
             class="text-primary">[{{ . | title | humanize }}.]</a>

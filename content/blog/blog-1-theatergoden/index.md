@@ -1,7 +1,7 @@
 ---
 categories:
-  - Columns
   - artikelen
+  - columns
 date: '2019-10-29T04:07:47.000Z'
 description: this is meta description
 draft: false

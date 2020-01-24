@@ -1,6 +1,7 @@
 ---
 categories:
-  - blog
+  - film
+  - thriller
 date: 10-11-19
 description: this is meta description
 draft: false

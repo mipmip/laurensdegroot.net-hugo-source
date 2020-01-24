@@ -1,16 +1,13 @@
 ---
-title: "Pers"
-date: 2019-10-29T13:49:23+06:00
+date: '2019-10-29T07:49:23.000Z'
+description: this is meta description
 draft: false
+image: images/author.jpg
+keywords: ''
+resources: []
+title: Pers
+type: pers
 
-# image
-image: "images/author.jpg"
-
-# meta description
-description: "this is meta description"
-
-# type
-type : "pers"
 ---
 
 Laurens de Groot begon zijn acteerloopbaan bij het Erasmus Toneel in
@@ -37,7 +34,7 @@ In 2015 richtte hij zijn eigen theatergezelschap op: Funktioneel Naakt. Met dit
 gezelschap maakte hij de voorstellingen "Puck en Julia" (2015), "De verhoren"
 (2017) en "De kus van de roos" (2018).
 
-## showreel
+#### showreel
 
 {{< youtube l3zb9dP_69k >}}
 

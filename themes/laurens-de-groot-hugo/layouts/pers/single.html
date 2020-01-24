@@ -5,13 +5,8 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
 
-        {{ $images := (.Resources.ByType "image").Match "headerimgs/*" }}
-        {{ range first 1 $images }}
-        {{ $imageResource :=  .  }}
-        <img src="{{ .PermalinkL }}" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
-        {{ end }}
-
-        <h4 class="widget-title">{{ .Title | markdownify }}</h4>
+        <img src="/author.jpg" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        <h4 >{{ .Title | markdownify }}</h4>
         <div class="content">
           {{ .Content }}
         </div>
@@ -25,7 +20,7 @@
 <section>
   <div class="container-fluid px-0">
     <div class="text-center">
-      <h4 class="widget-title">My Gallery</h4>
+      <h4 class="xwidget-title">My Gallery</h4>
     </div>
     <div class="row no-gutters">
       {{ range .gallery }}

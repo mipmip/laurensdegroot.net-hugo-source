@@ -1,10 +1,4 @@
 data:
-  - datum: 20 MAART
-    locatie: Zoetermeer
-    voorstelling: lezing
-  - datum: 26 NOVEMBER
-    locatie: 'Theater De Stoep, Spijkenisse (besloten)'
-    voorstelling: De beklimming van de Boekenberg
   - datum: 24 DECEMBER
     datum2: '2020-01-22'
     locatie: 'Bibliotheek, De Lier'
@@ -12,6 +6,9 @@ data:
   - datum: 14 DECEMBER
     locatie: 'Koperen Kees, Naaldwijk'
     voorstelling: Het kerstfeest van meneer Zondergeyn
+  - datum: 26 NOVEMBER
+    locatie: 'Theater De Stoep, Spijkenisse (besloten)'
+    voorstelling: De beklimming van de Boekenberg
   - datum: 26 NOVEMBER
     locatie: 'Schatbewakers, Zoetermeer'
     voorstelling: lezing

@@ -1,120 +1,119 @@
-######################## default configuration ####################
 baseURL = "/"
 languageCode = "nl-nl"
 languageLang = "nl"
-title = "Laurens de Groot"
-theme = ["hugo-debugprint", "laurens-de-groot-hugo"]
+paginate = 6.0
 summaryLength = "10"
-paginate = 6
-#disqusShortname = ""
+theme = [
+  "hugo-debugprint",
+  "laurens-de-groot-hugo"
+]
+title = "Laurens de Groot"
 
-[outputs]
-  home = ["HTML", "AMP", "RSS", "JSON"]
-
-############################# Plugins ##############################
-[params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-  [[params.plugins.css]]
-  URL = "plugins/venobox/venobox.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/venobox/venobox.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/fuse.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/mark.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/search.js"
-
-
-############################## navigation ###############################
 [menu]
 
-# main menu
-[[menu.main]]
-name = "Blog."
-URL = "blog"
-weight = 2
+  [[menu.main]]
+  URL = "blog"
+  name = "Blog."
+  weight = 2.0
 
-[[menu.main]]
-name = "Pers."
-URL = "pers/pers"
-weight = 3
+  [[menu.main]]
+  URL = "pers/pers"
+  name = "Pers."
+  weight = 3.0
 
-[[menu.main]]
-name = "Contact."
-URL = "contact"
-weight = 4
+  [[menu.main]]
+  URL = "contact"
+  name = "Contact."
+  weight = 4.0
 
-#################### default parameters ################################
+[outputs]
+home = [
+  "HTML",
+  "AMP",
+  "RSS",
+  "JSON"
+]
+
 [params]
-
-debug = false
-logo = "images/logo.svg"
-home = "Home."
-# Meta data
-description = "This is meta description"
 author = "Laurens de Groot"
-# Google Analitycs
-googleAnalitycsID = "UA-152869743-1"
-# Contact Information
-mobile = "+31 6 31 76 99 37"
+copyright = "@2020 Laurens de Groot - Alle rechten voorbehouden"
+debug = false
+description = "This is meta description"
 email = "info@manmetkoffer.nl"
+googleAnalitycsID = "UA-152869743-1"
+home = "Home."
 location = "Zoetermeer"
-# copyright
-copyright = "@2019 Laurens de Groot - Alle rechten voorbehouden"
+logo = "images/logo.svg"
+mobile = "+31 6 31 76 99 37"
 
-# Preloader
-[params.preloader]
-enable = false
-preloader = "" # use .png , .svg or .gif format
+  [params.newsletter]
+  content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+  enable = false
+  title = "Join Our Newsletter"
 
-# search
-[params.search]
-enable = false
+  [params.plugins]
 
-############################ news letter ########################
-[params.newsletter]
-enable = false
-title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+    [[params.plugins.css]]
+    URL = "plugins/bootstrap/bootstrap.min.css"
 
-############################# social site ########################
-[[params.social]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "https://www.facebook.com/laurens.degroot.79"
+    [[params.plugins.css]]
+    URL = "plugins/slick/slick.css"
 
-[[params.social]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/degrootlaurens"
+    [[params.plugins.css]]
+    URL = "plugins/themify-icons/themify-icons.css"
 
-[[params.social]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "https://www.instagram.com/laurens.degroot/"
+    [[params.plugins.css]]
+    URL = "plugins/venobox/venobox.css"
 
-[[params.social]]
-title = "youtube"
-icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
-link = "https://www.youtube.com/user/manmetkoffer"
+    [[params.plugins.js]]
+    URL = "plugins/jQuery/jquery.min.js"
 
-[[params.social]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "https://www.linkedin.com/in/laurens-de-groot-55771112/?locale=nl_NL"
+    [[params.plugins.js]]
+    URL = "plugins/bootstrap/bootstrap.min.js"
+
+    [[params.plugins.js]]
+    URL = "plugins/slick/slick.min.js"
+
+    [[params.plugins.js]]
+    URL = "plugins/venobox/venobox.min.js"
+
+    [[params.plugins.js]]
+    URL = "plugins/search/fuse.min.js"
+
+    [[params.plugins.js]]
+    URL = "plugins/search/mark.js"
+
+    [[params.plugins.js]]
+    URL = "plugins/search/search.js"
+
+  [params.preloader]
+  enable = false
+  preloader = ""
+
+  [params.search]
+  enable = false
+
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "https://www.facebook.com/laurens.degroot.79"
+  title = "facebook"
+
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  link = "https://twitter.com/degrootlaurens"
+  title = "twitter"
+
+  [[params.social]]
+  icon = "ti-instagram"
+  link = "https://www.instagram.com/laurens.degroot/"
+  title = "instagram"
+
+  [[params.social]]
+  icon = "ti-youtube"
+  link = "https://www.youtube.com/user/manmetkoffer"
+  title = "youtube"
+
+  [[params.social]]
+  icon = "ti-linkedin"
+  link = "https://www.linkedin.com/in/laurens-de-groot-55771112/?locale=nl_NL"
+  title = "linkedin"

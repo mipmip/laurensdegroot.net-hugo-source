@@ -1,6 +1,6 @@
 ---
 categories:
-  - blog
+  - theater
 date: 10-11-19
 description: this is meta description
 draft: true
@@ -26,7 +26,7 @@ Koffer**
 
 **Familievoorstelling**
 
-\...Het was een schitterende winter.
+"\...Het was een schitterende winter.
 Voor het eerst sinds jaren was heel Wolfsdorp bedekt met een dik pak
 sneeuw. En men genoot er met volle teugen van.
 

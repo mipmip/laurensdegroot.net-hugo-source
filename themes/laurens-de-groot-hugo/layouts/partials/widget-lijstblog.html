@@ -2,7 +2,7 @@
 
   <h3 class="diapos"><span>Blog.</span></h3>
 
-  {{ range first 5 (sort (where .RegularPages "Params.type" "blog") "File.Path" "desc") }}
+  {{ range first 5 (sort (where .ctx.Site.RegularPages "Params.type" "blog") "File.Path" "desc") }}
       <p class="pt">
 
         <a href="{{ .Permalink }}">

@@ -8,10 +8,10 @@ rijen:
   - kolommen:
       - aantalkol: '1'
         code: blog-6-terugblik-nederlands-thrillerfestival-de-editie
-        widget: fototekst
+        widget: blogfototekst
       - aantalkol: '1'
         code: blog-2-voorstelling-en-boekverkoop
-        widget: fototekst
+        widget: blogfototekst
       - aantalkol: '1'
         code: ''
         widget: lijstagenda
@@ -20,7 +20,7 @@ rijen:
   - kolommen:
       - aantalkol: '1'
         code: blog-1-theatergoden
-        widget: fototekst
+        widget: blogfototekst
       - aantalkol: '2'
         code: foto-2-poster
         widget: poster
@@ -35,3 +35,21 @@ rijen:
         widget: poster
     naam: 3e rij
     verborgen: false
+  - kolommen:
+      - aantalkol: '1'
+        code: foto-4
+        widget: poster
+      - aantalkol: '1'
+        code: ''
+        widget: lijstblog
+      - aantalkol: '1'
+        code: blog-1-theatergoden
+        widget: blogtekst
+    naam: 4e rij
+    verborgen: true
+  - kolommen:
+      - aantalkol: '3'
+        code: blog-6-terugblik-nederlands-thrillerfestival-de-editie
+        widget: blogfoto
+    naam: 5e rij
+    verborgen: true

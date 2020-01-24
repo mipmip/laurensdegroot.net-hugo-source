@@ -1,6 +1,8 @@
 ---
 categories:
-  - blog
+  - boek
+  - voorstelling
+  - theater
 date: 13-11-19
 description: this is meta description
 draft: false

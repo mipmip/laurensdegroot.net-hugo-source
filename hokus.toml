@@ -94,11 +94,6 @@ itemtitle = "Foto's"
   title = "Thumbnail"
   type = "bundle-image-thumbnail"
 
-#  [[collections.fields]]
-#  key = "mainContent"
-#  title = "Content"
-#  type = "markdown"
-
 [[singles]]
 key = "contactpagina"
 title = "Pagina: Contact"
@@ -138,18 +133,17 @@ dataformat = "yaml"
   title = "Paginatitel"
   type = "string"
 
-  [[singles.fields]]
-  key = "description"
-  title = "Meta: description"
-  type = "string"
-  multiLine = true
-
-  [[singles.fields]]
-  key = "keywords"
-  title = "Meta: keywords"
-  type = "string"
-  multiLine = true
-
+#  [[singles.fields]]
+#  key = "description"
+#  title = "Meta: description"
+#  type = "string"
+#  multiLine = true
+#
+#  [[singles.fields]]
+#  key = "keywords"
+#  title = "Meta: keywords"
+#  type = "string"
+#  multiLine = true
 
   [[singles.fields]]
   title = "Headerbeelden"
@@ -251,16 +245,24 @@ file = "data/voorpaginalayout.yaml"
       arrayTitle = true
 
         [[singles.fields.fields.fields.options]]
-        text = "foto"
+        text = "foto (uit foto's)"
         value = "poster"
 
         [[singles.fields.fields.fields.options]]
-        text = "video"
+        text = "video (youtube)"
         value = "video"
 
         [[singles.fields.fields.fields.options]]
-        text = "foto en tekst"
-        value = "fototekst"
+        text = "foto en tekst (uit blog)"
+        value = "blogfototekst"
+
+        [[singles.fields.fields.fields.options]]
+        text = "tekst (uit blog)"
+        value = "blogtekst"
+
+        [[singles.fields.fields.fields.options]]
+        text = "foto (uit blog)"
+        value = "blogfoto"
 
         [[singles.fields.fields.fields.options]]
         text = "agendalijst met laatste 4 items"
@@ -287,31 +289,36 @@ file = "config.toml"
   type = "string"
 
   [[singles.fields]]
+  key = "params1"
+  type = "pull"
+  group = "params"
+
+  [[singles.fields.fields]]
   key = "email"
   title = "Emailadres"
   type = "string"
 
-  [[singles.fields]]
+  [[singles.fields.fields]]
   key = "mobile"
   title = "Telefoornummer"
   type = "string"
 
-  [[singles.fields]]
+  [[singles.fields.fields]]
   key = "location"
   title = "Locatie"
   type = "string"
 
-  [[singles.fields]]
+  [[singles.fields.fields]]
   key = "copyright"
   title = "Copyright tekst"
   type = "string"
 
-  [[singles.fields]]
-  key = "baseURL"
-  title = "Base URL"
-  type = "readonly"
-
-  [[singles.fields]]
-  key = "theme"
-  title = "Theme"
-  type = "readonly"
+#  [[singles.fields]]
+#  key = "baseURL"
+#  title = "Base URL"
+#  type = "readonly"
+#
+#  [[singles.fields]]
+#  key = "theme"
+#  title = "Theme"
+#  type = "readonly"
